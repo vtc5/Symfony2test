@@ -1,0 +1,29 @@
+# To get started with security, check out the documentation:
+# http://symfony.com/doc/current/book/security.html
+security:
+    encoders:
+        Symfony\Component\Security\Core\User\User: plaintext
+    providers:
+        in_memory:
+            memory:
+                users:
+                    test:
+                        password: 123456
+                        roles: 'ROLE_USER'
+                    admin:
+                        password: 654321
+                        roles: 'ROLE_ADMIN'
+
+    firewalls:
+        # disables authentication for assets and the profiler, adapt it according to your needs
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        main:
+            anonymous: ~
+            http_basic: ~
+    access_control:
+        # require ROLE_ADMIN for /admin*
+        - { path: ^/admin, roles: ROLE_ADMIN }
+        

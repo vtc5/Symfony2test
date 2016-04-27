@@ -1,0 +1,23 @@
+<table class="views-table ">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Name</th>
+            <th>Note</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for report in reports %}
+        {% if loop.first %}
+          <tr class="odd views-row-first">
+        {% else %}
+          <tr class="{{ cycle(['odd', 'even'], loop.index0) }}">
+        {% endif %}
+            <td>{{ report.id }}</td>
+            <td>{{ report.name }}</td>
+            <td>{{ report.note }}</td>
+          </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<div><a href="{{ path('admin_app_note_list') }}">Edit its</a></div>

@@ -1,0 +1,16 @@
+AppBundle\Entity\Note:
+    properties:
+        name:
+            - NotNull: ~
+            - Length:
+                min: 3
+                max: 250
+                minMessage: 'Your Name must be at least {{ limit }} characters long'
+                maxMessage: 'Your Name cannot be longer than {{ limit }} characters'
+        note:
+            - NotNull: ~
+            - Length:
+                min: 3
+                max: 250
+                minMessage: 'Your Note must be at least {{ limit }} characters long'
+                maxMessage: 'Your Note cannot be longer than {{ limit }} characters'

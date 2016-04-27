@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="Notes">
+                <source>Notes</source>
+                <target>Notes</target>
+            </trans-unit>
+            <trans-unit id="Name">
+                <source>Name</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="Note">
+                <source>Note</source>
+                <target>Note</target>
+            </trans-unit>
+            <trans-unit id="contains">
+                <source>contains</source>
+                <target>contains</target>
+            </trans-unit>
+            <trans-unit id="does not contain">
+                <source>does not contain</source>
+                <target>does not contain</target>
+            </trans-unit>
+            <trans-unit id="is equal to">
+                <source>is equal to</source>
+                <target>is equal to</target>
+            </trans-unit>
+            <trans-unit id="Note List">
+                <source>Note List</source>
+                <target>Notes List</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

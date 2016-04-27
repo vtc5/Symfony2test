@@ -1,0 +1,16 @@
+AppBundle\Entity\Note:
+    type: entity
+    table: notes
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        name:
+            type: string
+            length: 255
+            unique: true
+        note:
+            type: string
+            length: 255
+            unique: true
